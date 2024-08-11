@@ -18,22 +18,22 @@ const App = () => {
     setError("");
 
     if (!name || !email || !phoneNumber || !password) {
-      return 'All fields are mandatory.';
+      return 'All fields are mandatory';
     }
     if (!/^[a-zA-Z0-9 ]+$/.test(name)) {
-      return 'Name is not alphanumeric.';
+      return 'Name is not alphanumeric';
     }
     if (!email.includes('@')) {
-      return 'Email must contain @.';
+      return 'Email must contain @';
     }
     if (!['male', 'female', 'other'].includes(gender)) {
-      return 'Please identify as male, female or others.';
+      return 'Please identify as male, female or others';
     }
     if (!/^\d+$/.test(phoneNumber)) {
-      return 'Phone Number must contain only numbers.';
+      return 'Phone Number must contain only numbers';
     }
     if (password.length < 6) {
-      return 'Password must contain at least 6 letters.';
+      return 'Password must contain atleast 6 letters';
     }
     return "";
   }
