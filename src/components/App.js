@@ -121,8 +121,8 @@ const App = () => {
           <button type="submit" data-testid='submit'>Submit</button>
         </div>
       </form>
-      {error && <h1 className="error">{error}</h1>}
-      {message && <h1 className="welcome">{message}</h1>}
+      {error && <span className="error">{error}</span>}
+      {message && <h2 className="welcome">{message}</h2>}
     </div>
   );
 }
