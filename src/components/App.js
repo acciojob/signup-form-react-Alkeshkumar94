@@ -47,7 +47,7 @@ const App = () => {
       setMessage('');
     } else {
       const username = formData.email.split('@')[0];
-      setMessage(`Hello ${username}`);
+      setMessage(`Hello ${username.toUpperCase()}`);
       setError('');
     }
   };
