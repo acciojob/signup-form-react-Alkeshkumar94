@@ -81,7 +81,7 @@ const App = () => {
           />
         </div>
         <br />
-        <div>
+        <span>
           <label>Gender:</label>
           <select 
             value={formData.gender} 
@@ -93,7 +93,7 @@ const App = () => {
             <option value="female">Female</option>
             <option value="other">Other</option>
           </select>
-        </div>
+        </span>
         <br />
         <div>
           <label>Phone Number:</label>
