@@ -24,7 +24,7 @@ const App = () => {
       return 'Name is not alphanumeric';
     }
     if (!email.includes('@')) {
-      return 'Email must contain @';
+      return 'email must contain @';
     }
     if (!['male', 'female', 'other'].includes(gender)) {
       return 'Please identify as male, female or others';
